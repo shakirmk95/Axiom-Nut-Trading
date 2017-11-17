@@ -136,6 +136,10 @@ body {
 .sidebar-ele.in:hover {
 	background: rgb(12, 150, 204);
 }
+.sidebar-ele.gp:hover {
+	background: #dd4b39;
+}
+
 @-webkit-keyframes swing {
     15% {
         -webkit-transform: translateX(5px);

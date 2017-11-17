@@ -33,9 +33,10 @@
 	</div>
 	<div class="sidebar-wrapper">
 		<ul class="sidebar">
-			<li class="sidebar-ele fb"><span><img src="../img/fb.png" width="24px"></span></li>
-			<li class="sidebar-ele twi"><span><img src="../img/twi.png" width="24px"></span></li>
-			<li class="sidebar-ele in"><span><img src="../img/in.png" width="24px"></span></li>
+			<a href="https://www.facebook.com/axiomnuttrading/" target="_blank"><li class="sidebar-ele fb"><img src="../img/fb.png" width="24px"></li></a>
+			<a href="https://twitter.com/axiomnuttrading" target="_blank"><li class="sidebar-ele twi"><img src="../img/twi.png" width="24px"></li></a>
+			<a href="https://www.linkedin.com/company/axiomnuttrading/" target="_blank"><li class="sidebar-ele in"><img src="../img/in.png" width="24px"></li></a>
+			<a href="https://plus.google.com/u/1/108438715655576744674" target="_blank"><li class="sidebar-ele gp"><img src="../img/g+.png" width="24px"></li></a>
 		</ul>
 	</div>
 	<div style="position: fixed;right: 10px;top: 45%;z-index: 1005;">
@@ -159,6 +160,11 @@
 			$('.prdDesc2').hide();
 			$('.'+tag).show();
 		});
+		function checkForChanges() {
+    		$('.tf.active').click();
+    		$('.df.active').click();
+		}
+		$(checkForChanges);
 	</script>
 </body>
 </html>
