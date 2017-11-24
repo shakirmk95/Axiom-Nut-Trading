@@ -7,123 +7,732 @@
     <meta name="description" content="We import and export Nuts and Dates">
     <meta name="keywords" content="Nuts, Cashew, Almond, Fig, Dates, Alrifah, Import, Export, Axioms, Business, Trading, Website, Payments">
 	<title>Axioms | Import & Export</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <style type="text/css">
-     body {
-     	font-family: 'Abel', sans-serif;
-     }	
-.rest, .t1, .t2, .t3, .t4 {
-	display: none;
-}
-/*.t1, .t2, .t3, .t4 {*/
-	/*display: none;*/
-/*}*/
-</style>
+    	.wrappingC {
+    		padding: 0px 30px;
+    	}
+    	@media(max-width: 500px) {
+	    	.wrappingC {
+	    		padding: 0px 0px;
+	    	}
+    	}
+		body {
+			font-family: 'Abel', sans-serif;
+		}	
+		.rest, .t1, .t2, .t3, .t4, .t5, .t6, .t7, .t4a, .st1, .st1a, .st2, .st3, .p1, .p1a, .p2, .p3, .c1, .c1a, .c2, .c3, .products, .story, .contact {
+			display: none;
+		}
+		.carousel .carousel-item>img {
+			border: 2px solid #fff;
+		}
+		::-webkit-scrollbar { 
+		    display: none; 
+		}
+	</style>
 </head>
-<body style="overflow: hidden;">
-	<div class="loader fadeOut" style="background: #222;height: 100%;width: 100%;position: absolute;top: 0px;left: 0px;">
-      <div class="row valign-wrapper" style="height: 100%;">
-        <div class="col s9 m7 l5 t5 fadeIn" style="text-align: center;margin: auto;">
-          <h4 style="line-height: 3rem;">"Today's mighty Oak is just Yesterday's nut, that held it's ground"<br></h4>
-          <h5 style="line-height: 1rem;"><i>David leke</i></h5>
-        </div>
-        <div class="col s9 m7 l5 t6" style="text-align: center;display: none;margin: auto;">
-            <div class="t7 flipInX" style="text-align: center;display: none;">
-                <img src="img/logo.png">
-            </div>
-            <h5 class="t7 flipInX" style="line-height: 1rem;display: none;">LOADING...</h5>
-        </div>        
-      </div>
-		</div>
+<body style="overflow-x: hidden;">
+	<div class="loader" style="background: #222;height: 100%;width: 100%;position: absolute;top: 0px;left: 0px;overflow: hidden;">
+	    <div class="row valign-wrapper" style="height: 100%;">
+	        <div class="col s9 m7 l5 t5" style="text-align: center;margin: auto;">
+	          <h4 style="line-height: 3rem;">"Today's mighty Oak is just Yesterday's nut, that held it's ground"<br></h4>
+	          <h5 style="line-height: 1rem;"><i>David leke</i></h5>
+	        </div>
+	        <div class="col s9 m7 l5 t6" style="text-align: center;display: none;margin: auto;">
+	            <div class="t7" style="text-align: center;display: none;">
+	                <img src="img/logo.png" style="max-width: 50%;">
+	            </div>
+	            <h5 class="t7" id="loadCont" style="display: none;">LOADING...</h5>
+	        </div>        
+	    </div>
 	</div>
-	<div class="rest">
+	<div class="rest" style="height: 100%;width: 100%;overflow-x: hidden;">
 		<div class="bkground"></div>
 		<div class="blocker"></div>
-		<div class="row" style="margin: 0px;padding: 0px;position: fixed;top: 0px;left: 0px;width: 100%;">
-			<div class="col l2 hide-on-med-and-down fadeInDown t1" style="margin: 0px;padding: 0px;text-align: left;">
-				<img src="img/tl.png" style="z-index: 0;">
+		<div class="home" style="overflow: hidden;height: 100%;width: 100%;">
+			<div class="row" style="margin: 0px;padding: 0px;position: fixed;top: 0px;left: 0px;width: 100%;">
+				<div class="col l2 hide-on-med-and-down t1" style="margin: 0px;padding: 0px;text-align: left;">
+					<img src="img/tl.png" style="z-index: 0;">
+				</div>
+				<div class="col s12 l8 t1" style="margin: 0px;padding: 0px;text-align: center;">
+					<img src="img/t.png" style="z-index: 0;">
+				</div>
+				<div class="col l2 hide-on-med-and-down t1" style="margin: 0px;padding: 0px;text-align: right;">
+					<img src="img/tr.png" style="z-index: 0;">
+				</div>
 			</div>
-			<div class="col s12 l8 fadeInDown t1" style="margin: 0px;padding: 0px;text-align: center;">
-				<img src="img/t.png" style="z-index: 0;">
+			<div class="sidebar-wrapper">
+				<ul class="sidebar">
+					<a href="https://www.facebook.com/axiomnuttrading/" target="_blank"><li class="sidebar-ele fb"><img src="img/fb.png" width="24px"></li></a>
+					<a href="https://twitter.com/axiomnuttrading" target="_blank"><li class="sidebar-ele twi"><img src="img/twi.png" width="24px"></li></a>
+					<a href="https://www.linkedin.com/company/axiomnuttrading/" target="_blank"><li class="sidebar-ele in"><img src="img/in.png" width="24px"></li></a>
+					<a href="https://plus.google.com/u/1/108438715655576744674" target="_blank"><li class="sidebar-ele gp"><img src="img/g+.png" width="24px"></li></a>
+				</ul>
 			</div>
-			<div class="col l2 hide-on-med-and-down fadeInDown t1" style="margin: 0px;padding: 0px;text-align: right;">
-				<img src="img/tr.png" style="z-index: 0;">
+			<div style="position: fixed;right: 10px;top: 45%;z-index: 1005;">
+				<a onclick="goth('story', 'home')"><img src="img/Explore.png" style="cursor: pointer;"></a>
+			</div>
+			<div style="position: relative;top: 150px;left: 0px;width: 100%;height: 100%;z-index: 1000;">
+				<div class="t1" style="text-align: center;">
+					<img src="img/logo.png" style="max-width: 45%;">
+				</div>
+				<div class="t2" style="text-align: center;font-size: 40px;color: #fff;">THE DATES AND NUTS PEOPLE</div>
+				<div class="t3" style="text-align: center;font-size: 25px;color: #fff;">Welcome to our website</div>
+				<div class="t4" style="text-align: center;font-size: 15px;color: #fff;">
+					<a onclick="goth('story', 'home')"><div class="knowmore">Know more</div></a>
+				</div>
+			</div>
+			<div class="row hide-on-small-only" style="margin: 0px;padding: 0px;position: fixed;bottom: 0px;left: 0px;width: 100%;">
+				<div class="col s6 t4a" style="margin: 0px;padding: 0px;text-align: left;">
+					<img src="img/bl.png" style="margin: 0px 0px -130px -130px;z-index: 0;">
+				</div>
+				<div class="col s6 t4a" style="margin: 0px;padding: 0px;text-align: right;">
+					<img src="img/br.png" style="margin: 0px -130px -130px 0px;z-index: 0;">
+				</div>
 			</div>
 		</div>
-		<div class="sidebar-wrapper">
-			<ul class="sidebar">
-				<a href="https://www.facebook.com/axiomnuttrading/" target="_blank"><li class="sidebar-ele fb"><img src="img/fb.png" width="24px"></li></a>
-				<a href="https://twitter.com/axiomnuttrading" target="_blank"><li class="sidebar-ele twi"><img src="img/twi.png" width="24px"></li></a>
-				<a href="https://www.linkedin.com/company/axiomnuttrading/" target="_blank"><li class="sidebar-ele in"><img src="img/in.png" width="24px"></li></a>
-				<a href="https://plus.google.com/u/1/108438715655576744674" target="_blank"><li class="sidebar-ele gp"><img src="img/g+.png" width="24px"></li></a>
-			</ul>
-		</div>
-		<div style="position: fixed;right: 10px;top: 45%;z-index: 1005;">
-			<a href="story/index.html"><img src="img/Explore.png" style="cursor: pointer;"></a>
-		</div>
-		<div style="position: relative;top: 150px;left: 0px;width: 100%;height: 100%;z-index: 1000;">
-			<div class="t1 fadeInDown" style="text-align: center;">
-				<img src="img/logo.png">
+		<div class="story">
+			<div class="row" style="margin: 0px;padding: 0px;position: relative;top: 0px;left: 0px;width: 100%;">
+				<div class="col l2 hide-on-med-and-down st1" style="margin: 0px;padding: 0px;text-align: left;">
+					<img src="img/tl.png" style="z-index: 0;">
+				</div>
+				<div class="col s12 l8 st1" style="margin: 0px;padding: 0px;text-align: center;">
+					<img src="img/t.png" style="z-index: 0;">
+				</div>
+				<div class="col l2 hide-on-med-and-down st1" style="margin: 0px;padding: 0px;text-align: right;">
+					<img src="img/tr.png" style="z-index: 0;">
+				</div>
 			</div>
-			<div class="t2 fadeInRightBig" style="text-align: center;font-size: 40px;color: #fff;">THE DATES AND NUTS PEOPLE</div>
-			<div class="t3 fadeInLeftBig" style="text-align: center;font-size: 25px;color: #fff;">Welcome to our website</div>
-			<div class="t4 fadeInUpBig" style="text-align: center;font-size: 15px;color: #fff;">
-				<a href="story/index.html"><div class="knowmore">Know more</div></a>
+			<div class="sidebar-wrapper">	
+				<ul class="sidebar">
+					<a href="https://www.facebook.com/axiomnuttrading/" target="_blank"><li class="sidebar-ele fb"><img src="img/fb.png" width="24px"></li></a>
+					<a href="https://twitter.com/axiomnuttrading" target="_blank"><li class="sidebar-ele twi"><img src="img/twi.png" width="24px"></li></a>
+					<a href="https://www.linkedin.com/company/axiomnuttrading/" target="_blank"><li class="sidebar-ele in"><img src="img/in.png" width="24px"></li></a>
+					<a href="https://plus.google.com/u/1/108438715655576744674" target="_blank"><li class="sidebar-ele gp"><img src="img/g+.png" width="24px"></li></a>
+				</ul>
+			</div>
+			<div style="position: fixed;right: 10px;top: 45%;z-index: 1005;">
+				<a onclick="goth('products', 'story')"><img src="img/Explore.png" style="cursor: pointer;"></a>
+			</div>
+			<div class="row header head1">
+				<div class="st1a" style="width: 80%;margin: auto;">
+					<div class="col m1 hide-on-large-only"></div>
+					<div class="col m3 l3" style="text-align: center;margin: 0px;padding: 0px;position: relative;top: -45px;left: -20px;">
+						<img src="img/logo.png" width="125px">
+					</div>
+					<div class="col m7 l6 row" style="margin: 0px;padding: 0px;">
+						<a onclick="goth('home', 'story')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">HOME<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+						<a onclick="goth('products', 'story')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">PRODUCTS<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+						<a onclick="goth('contact', 'story')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">CONTACT<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row header head2">
+				<div class="st1a" style="width: 80%;margin: auto;">
+					<div class="col s6 m6" style="text-align: right;margin: 0px;padding: 0px;position: relative;top: -25px;left: -20px;">
+						<img src="img/logo.png" width="125px">
+					</div>
+					<div class="col s6 m6" style="margin: 0px;padding: 0px;position: relative;top: -50px;">
+						<a onclick="goth('home', 'story')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;position: relative;top: 15px;">HOME<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a><br>
+						<a onclick="goth('products', 'story')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;">PRODUCTS<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a><br>
+						<a onclick="goth('contact', 'story')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;position: relative;bottom: 15px;">CONTACT<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row content">
+				<h5 class="col s12 st2" style="color:#fff;margin: 0px;padding: 0px;text-align: center;text-decoration:underline;">OUR STORY</h5>
+				<div class="col s12 st3" style="color:#fff;margin: 0px;padding: 0px;text-align: center;font-size: 17px;">
+					<p style="margin-top: 30px;">Axiom Nut Trading embarked on its journey with the aspiration of introducing the people to the international standard best quality dry fruits and nuts that can satisfy every taste bud around the world. We started off as a subsidiary of Ismail Cashew Exports and N.N Cashew Exports, together make one of the world’s top growing suppliers, distributors and exporters of edible nuts and fruits. We believe that a perfect guidance can take anyone miles ahead. Hence we follow the footsteps of our founders, who are pioneers in the nuts industry with more than 20 years of experience in offering best quality services to their clients.</p>
+					<p>A good team helps in attaining great results. The support of a rich vendor base helps us in ensuring that we deliver superior quality of products to our customers. We give as much importance to our products as much we give to our customers. Regular quality checks, tie ups with reputed firms and an emphasis on maintaining quality standard of production helps us in ensuring that there is no compromise in the quality of our products. The consistency in the superior quality of our products and the wide range of services we offer, makes us different from the rest of the market. Our client base is our strongest asset. The immense satisfaction of our clients that weattained through our ethical business practices and customer centric approach has helped us gain a respectable position in Indian and GCC markets.</p>
+					<p>We at Axiom Nut Trading strive hard to fulfill all the needs and requests in the best interest of our client. We are known for our friendly and trustworthy manner of approach, along with on time delivery of services. Winning your trust and satisfaction is what paramount to us. Hence we bring to you a world of opportunity at your doorsteps, with the sole intention of helping you grow further in your respected venture. The happy and satisfied faces of our customer’s hint that we have been able to serve our purpose. And this inspires us further to continue on the journey of providing the best possible products for a happy and a healthy society.</p>
+				</div>
 			</div>
 		</div>
-		<div class="row hide-on-small-only" style="margin: 0px;padding: 0px;position: fixed;bottom: 0px;left: 0px;width: 100%;">
-			<div class="col s6 fadeInUp t4" style="margin: 0px;padding: 0px;text-align: left;">
-				<img src="img/bl.png" style="margin: 0px 0px -130px -130px;z-index: 0;">
+		<div class="products">
+			<div class="row" style="margin: 0px;padding: 0px;position: relative;top: 0px;left: 0px;width: 100%;">
+				<div class="col l2 hide-on-med-and-down p1" style="margin: 0px;padding: 0px;text-align: left;">
+					<img src="img/tl.png" style="z-index: 0;">
+				</div>
+				<div class="col s12 l8 p1" style="margin: 0px;padding: 0px;text-align: center;">
+					<img src="img/t.png" style="z-index: 0;">
+				</div>
+				<div class="col l2 hide-on-med-and-down p1" style="margin: 0px;padding: 0px;text-align: right;">
+					<img src="img/tr.png" style="z-index: 0;">
+				</div>
 			</div>
-			<div class="col s6 fadeInUp t4" style="margin: 0px;padding: 0px;text-align: right;">
-				<img src="img/br.png" style="margin: 0px -130px -130px 0px;z-index: 0;">
+			<div class="sidebar-wrapper">
+				<ul class="sidebar">
+					<a href="https://www.facebook.com/axiomnuttrading/" target="_blank"><li class="sidebar-ele fb"><img src="img/fb.png" width="24px"></li></a>
+					<a href="https://twitter.com/axiomnuttrading" target="_blank"><li class="sidebar-ele twi"><img src="img/twi.png" width="24px"></li></a>
+					<a href="https://www.linkedin.com/company/axiomnuttrading/" target="_blank"><li class="sidebar-ele in"><img src="img/in.png" width="24px"></li></a>
+					<a href="https://plus.google.com/u/1/108438715655576744674" target="_blank"><li class="sidebar-ele gp"><img src="img/g+.png" width="24px"></li></a>
+				</ul>
+			</div>
+			<div style="position: fixed;right: 10px;top: 45%;z-index: 1005;">
+				<a onclick="goth('contact', 'products')"><img src="img/Explore.png" style="cursor: pointer;"></a>
+			</div>
+			<div class="row header head1">
+				<div class="p1a" style="width: 80%;margin: auto;">
+					<div class="col m1 hide-on-large-only"></div>
+					<div class="col m3 l3" style="text-align: center;margin: 0px;padding: 0px;position: relative;top: -45px;left: -20px;">
+						<img src="img/logo.png" width="125px">
+					</div>
+					<div class="col m7 l6 row" style="margin: 0px;padding: 0px;">
+						<a onclick="goth('home', 'products')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">HOME<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+						<a onclick="goth('story', 'products')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">STORY<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+						<a onclick="goth('contact', 'products')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">CONTACT<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row header head2">
+				<div class="p1a" style="width: 80%;margin: auto;">
+					<div class="col s6 m6" style="text-align: right;margin: 0px;padding: 0px;position: relative;top: -25px;left: -20px;">
+						<img src="img/logo.png" width="125px">
+					</div>
+					<div class="col s6 m6" style="margin: 0px;padding: 0px;position: relative;top: -50px;">
+						<a onclick="goth('home', 'products')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;position: relative;top: 15px;">HOME<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a><br>
+						<a onclick="goth('story', 'products')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;">STORY<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a><br>
+						<a onclick="goth('contact', 'products')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;position: relative;bottom: 15px;">CONTACT<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row content">
+				<h5 class="col s12 p2" style="color:#fff;margin: 0px;padding: 0px;text-align: center;text-decoration:underline;">OUR PRODUCTS</h5>
+				<div class="row">
+					<div class="col m12 l6 p2" style="margin: 0px;padding: 0px;margin-top: 30px;">
+						<h5 style="text-align: center;">Dry Fruits</h5>
+						<div class="carousel" style="margin-top: -70px;">
+							<a class="carousel-item df" cls="df" id="walnuts" href="#five!"><img src="img/walnut.jpg" tag="walnuts"></a>
+							<a class="carousel-item df" cls="df" id="cashew" href="#two!"><img src="img/cashew.jpg" tag="cashew"></a>
+							<a class="carousel-item df" cls="df" id="brazilnuts" href="#three!"><img src="img/brazilnuts.jpg" tag="brazilnuts"></a>
+							<a class="carousel-item df" cls="df" id="hazelnuts" href="#four!"><img src="img/hazelnut.jpg" tag="hazelnuts"></a>
+							<a class="carousel-item df" cls="df" id="macadamianuts" href="#five!"><img src="img/macadamia.jpg" tag="macadamianuts"></a>
+							<a class="carousel-item df" cls="df" id="almond" href="#one!"><img src="img/almond.jpg" tag="almond"></a>
+					  	</div>
+						<div class="prodDesc" style="padding: 40px;margin-top: -110px;text-align: center;">
+							<div class="almond prdDesc1">
+								<h5>Almonds</h5>
+								<p>It’s a well know fact that almonds are highly nutritious nut. They are a rich source of vitamin E, calcium, iron and magnesium. Usually connected to higher intellectual level, they help in the development and health of human brain. Grab a few of our delicious almonds every day for a healthy body and mind!</p>
+							</div>
+							<div class="cashew prdDesc1">
+								<h5>Cashews</h5>
+								<p>The delicately flavoured cashew nut is a favourite between meal and snack. The health benefits of cashews include a healthy heart, strong muscle function, an improved bone and oral health among others. What more? It is a great taste enhancer; make your favorite dishes 10 times more flavourful with just a few topping of our top notch cashews!</p>
+							</div>
+							<div class="brazilnuts prdDesc1">
+								<h5>Brazil Nuts</h5>
+								<p>Brazil Nuts are the number one food source for selenium, an extremely vital mineral for human immunity. They also help in preventing cancer, as well lifting moods; hence they are an excellent addition to depression diet. The next time you feel down, cheer yourself up with this lip smacking and healthy snack.</p>
+							</div>
+							<div class="hazelnuts prdDesc1">
+								<h5>Hazel Nuts</h5>
+								<p>Who doesn’t love hazelnut flavour in coffee or chocolates! It’s a versatile nut which can be enjoyed raw, roasted, or as an ingredient in variety of dishes. It also helps in managing diabetes, controlling cholesterol and boosting the functioning of brain. Now this is the best example of healthy can be tasty!</p>
+							</div>
+							<div class="macadamianuts prdDesc1">
+								<h5>Macadamia Nuts</h5>
+								<p>Native to Australia, these are considered as the world’s finest nuts. And why not, this butterly flavoured nut not only takes care of your taste buds but also of your body. They help in controlling heart diseases, managing weight loss, preventing hai breakage and delaying skin aging. They are what we like to call, a butterly delight.</p>
+							</div>
+							<div class="walnuts prdDesc1">
+								<h5>Walnuts</h5>
+								<p>King of dry fruits, walnut can provide numerous heath benefits at a very mild dose. They have cancer fighting properties; aid in weight loss.Eating just four walnuts a day has been shown to significantly raise blood levels of heart-healthy. Toss them around in salads or deserts and adds a crunchy twist!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col m12 l6 p3" style="margin: 0px;padding: 0px;margin-top: 30px;">
+						<h5 style="text-align: center;">Tree Fruits</h5>
+						<div class="carousel" style="margin-top: -70px;">
+							<a class="carousel-item tf" cls="tf" id="dates" href="#two!"><img src="img/dates.jpg" tag="dates"></a>
+							<a class="carousel-item tf" cls="tf" id="figs" href="#three!"><img src="img/fig.jpg" tag="figs"></a>
+							<a class="carousel-item tf" cls="tf" id="prunes" href="#four!"><img src="img/prunes.jpg" tag="prunes"></a>
+							<a class="carousel-item tf" cls="tf" id="cherries" href="#five!"><img src="img/cherries.jpg" tag="cherries"></a>
+							<a class="carousel-item tf" cls="tf" id="apricots" href="#one!"><img src="img/apricots.jpg" tag="apricots"></a>
+					  	</div>
+						<div class="prodDesc" style="padding: 40px;margin-top: -110px;text-align: center;">
+							<div class="apricots prdDesc2">
+								<h5>Apricots</h5>
+								<p>These small dupes, closely related to peaches are known for their ability to treat in digestion, fever, skin diseases and cancers.There versatility can be judged by the wide range of uses they serve. Apart from direct consumption you can use them to make delicious jams, squash, juices and even jellies. They are the perfect blend of beauty and taste.</p>
+							</div>
+							<div class="dates prdDesc2">
+								<h5>Dates</h5>
+								<p>Dates have always been known for their healing powers. These sweet and delicious dark fruits are rich in vitamins; they promote digestion, strengthen the nervous system and help in weight gain. Our dates sell like hot cakes. Don’t believe us? Time to try them yourself!</p>
+							</div>
+							<div class="figs prdDesc2">
+								<h5>Figs</h5>
+								<p>Considered exotic in many areas around the world, figs are high source of fibre and other essential minerals including magnesium, calcium etc. This eye catching fruit serves the taste buds well .We handpick our figs to make sure, you fall in love with them.</p>
+							</div>
+							<div class="prunes prdDesc2">
+								<h5>Prunes</h5>
+								<p>A dried form of plum, prunes have acted as a popular digestive remedy for decades. Their health benefits also help prevent obesity and reduce the risk of osteoporosis among others. Add that pinch of extra flavour and nutrition to your daily routine with our special prunes.</p>
+							</div>
+							<div class="cherries prdDesc2">
+								<h5>Cherries</h5>
+								<p>This bright fruit is not only appealing to the eyes, but also to our taste buds. Bursting with vitamins and antioxidants, they are known for reducing inflammation as well as blood pressure of regularly eaten. The sweet and sour flavours are sure to make you addicted to them!</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="contact">
+			<div class="row" style="margin: 0px;padding: 0px;position: relative;top: 0px;left: 0px;width: 100%;">
+				<div class="col l2 hide-on-med-and-down c1" style="margin: 0px;padding: 0px;text-align: left;">
+					<img src="img/tl.png" style="z-index: 0;">
+				</div>
+				<div class="col s12 l8 c1" style="margin: 0px;padding: 0px;text-align: center;">
+					<img src="img/t.png" style="z-index: 0;">
+				</div>
+				<div class="col l2 hide-on-med-and-down c1" style="margin: 0px;padding: 0px;text-align: right;">
+					<img src="img/tr.png" style="z-index: 0;">
+				</div>
+			</div>
+			<div class="sidebar-wrapper">
+				<ul class="sidebar">
+					<a href="https://www.facebook.com/axiomnuttrading/" target="_blank"><li class="sidebar-ele fb"><img src="img/fb.png" width="24px"></li></a>
+					<a href="https://twitter.com/axiomnuttrading" target="_blank"><li class="sidebar-ele twi"><img src="img/twi.png" width="24px"></li></a>
+					<a href="https://www.linkedin.com/company/axiomnuttrading/" target="_blank"><li class="sidebar-ele in"><img src="img/in.png" width="24px"></li></a>
+					<a href="https://plus.google.com/u/1/108438715655576744674" target="_blank"><li class="sidebar-ele gp"><img src="img/g+.png" width="24px"></li></a>
+				</ul>
+			</div>
+			<div style="position: fixed;right: 10px;top: 45%;z-index: 1005;">
+				<a onclick="goth('home', 'contact')"><img src="img/Explore.png" style="cursor: pointer;"></a>
+			</div>
+			<div class="row header head1">
+				<div class="c1a" style="width: 80%;margin: auto;">
+					<div class="col m1 hide-on-large-only"></div>
+					<div class="col m3 l3" style="text-align: center;margin: 0px;padding: 0px;position: relative;top: -45px;left: -20px;">
+						<img src="img/logo.png" width="125px">
+					</div>
+					<div class="col m7 l6 row" style="margin: 0px;padding: 0px;">
+						<a onclick="goth('home', 'contact')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">HOME<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+						<a onclick="goth('story', 'contact')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">STORY<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+						<a onclick="goth('products', 'contact')" class="col m4 swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;">PRODUCTS<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row header head2">
+				<div class="c1a" style="width: 80%;margin: auto;">
+					<div class="col s6 m6" style="text-align: right;margin: 0px;padding: 0px;position: relative;top: -25px;left: -20px;">
+						<img src="img/logo.png" width="125px">
+					</div>
+					<div class="col s6 m6" style="margin: 0px;padding: 0px;position: relative;top: -50px;">
+						<a onclick="goth('home', 'contact')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;position: relative;top: 15px;">HOME<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a><br>
+						<a onclick="goth('story', 'contact')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;">STORY<span style="font-size: 50px;line-height: 50px;position: relative;top: 2px;">&#187;</span></a><br>
+						<a onclick="goth('products', 'contact')" class="swinga" style="font-size: 1.64rem;color:#fff;margin: 0px;padding: 0px;text-align: center;margin:0px;padding: 0px;position: relative;bottom: 15px;">PRODUCTS<span style="font-size: 50px;line-height: 50px;">&#187;</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row content" style="max-width: 1100px;">
+				<div class="col m12 l6 c2" style="margin: 0px;padding: 0px 30px;">
+					<div class="wrappingC">
+						<h5 style="color:#fff;margin: 20px 0px;padding: 0px;">CONTACT US</h5>
+			            <form name="sentMessage" id="contactForm" action="contact_me.php" method="post" novalidate>
+			                <div class="row control-group" style="margin: 0px;">
+			                    <div class="form-group col-xs-12 floating-label-form-group controls">
+			                        <label for="name">Name</label>
+			                        <input type="text" class="form-control" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name." style="padding: 18px;height: 1rem;margin: 0;background: rgb(256,256,256);color: #222;">
+			                        <p class="help-block text-danger"></p>
+			                    </div>
+			                </div>
+			                <div class="row control-group" style="margin: 0px;">
+			                    <div class="form-group col-xs-12 floating-label-form-group controls">
+			                        <label for="email">Email Address</label>
+			                        <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address." style="padding: 18px;height: 1rem;margin: 0;background: rgb(256,256,256);color: #222;">
+			                        <p class="help-block text-danger"></p>
+			                    </div>
+			                </div>
+			                <div class="row control-group" style="margin: 0px;">
+			                    <div class="form-group col-xs-12 floating-label-form-group controls">
+			                        <label for="message">Message</label>
+			                        <textarea rows="5" class="form-control" placeholder="Message" id="message" name="message" required data-validation-required-message="Please enter a message." style="padding: 18px;border: 0px;border-bottom: 1px solid rgba(247, 247, 247, 0.3);height: inherit;background: rgb(256,256,256);outline: transparent;color: #222;" data-length="70"></textarea>
+			                        <p class="help-block text-danger"></p>
+			                    </div>
+			                </div>
+			                <br>
+			                <div id="success"></div>
+			                <div class="row">
+			                    <div class="s12" style="text-align: right;">
+			                        <button type="submit" class="btn btn-lg" style="background: #2b2b2b;padding: 0px 40px;">Send</button>
+			                    </div>
+			                </div>
+			            </form>
+					</div>
+				</div>
+				<div class="col m12 l6 c3" style="margin: 0px;padding: 0px 30px;">
+					<div style="background: rgba(002,002,002,0.7);padding: 30px;">
+						<h5 style="color:#fff;margin: 20px 0px;padding: 0px;">LOCATION <a href="https://goo.gl/maps/ETn1vF3aHqS2" target="_blank"><img style="height: 30px;position: relative;top: 5px;cursor: pointer;" src="img/location.png"></a></h5>
+						<div style="color: #fff;padding: 10px 15px;border-left: 1px solid #fff;">
+							<p style="margin: 0px;color: #fff;">Axiom Nut Trading</p>
+							<p style="margin: 0px;color: #fff;">Kilikolloor - PO</p>
+							<p style="margin: 0px;color: #fff;">Kollam - 691004</p>
+							<p style="margin: 0px;color: #fff;">Kerala, India</p>
+						</div>			
+						<h5 style="color:#fff;margin: 50px 0px 20px;padding: 0px;">CONTACT</h5>
+						<div style="color: #fff;padding: 10px 15px;border-left: 1px solid #fff;">
+							<p style="margin: 0px;color: #fff;">Phone: 0474-3222205</p>
+							<p style="margin: 0px;color: #fff;">E-mail: contact@axiomnuttrading.com</p>
+						</div>			
+						<div class="row" style="color:#fff;margin: 20px 0px;padding: 0px;margin-top: 40px;">
+							<div class="col s3" style="text-align: center;"><a href="https://www.facebook.com/axiomnuttrading/" target="_blank"><img src="img/fb.png" width="24px" style="cursor: pointer"></a></div>
+							<div class="col s3" style="text-align: center;"><a href="https://twitter.com/axiomnuttrading" target="_blank"><img src="img/twi.png" width="24px" style="cursor: pointer"></a></div>
+							<div class="col s3" style="text-align: center;"><a href="https://www.linkedin.com/company/axiomnuttrading/" target="_blank"><img src="img/in.png" width="24px" style="cursor: pointer"></a></div>
+							<div class="col s3" style="text-align: center;"><a href="https://plus.google.com/u/1/108438715655576744674" target="_blank"><img src="img/g+.png" width="24px" style="cursor: pointer"></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="arr" style="width: 100%;background: transparent;height: 40px;position: fixed;bottom: 0px;left: 0px;padding: 10px;z-index: 5000;">
+		<p style="text-align: center;margin: 0px;color: #f3f3f3;">All Rights Reserved</p>
 	</div>
 	<script src="js/jquery 3.1.1.min.js"></script>
 	<script src="js/materialize.min.js"></script>
-	<script src="js/query.js"></script>
 	<script type="text/javascript">	
+		$(window).resize(function() {
+			$('input').width($('textarea').width());
+		});
+		$(document).ready(function(){
+			$('.carousel').carousel();
+		});
+		function checkIt1(itemName) {
+			if($('#'+itemName).css('opacity') == 1) {
+				// alert(itemName);
+				if($('#'+itemName).attr('cls') == 'df') {
+					$('.prdDesc1').hide();
+					$('.'+itemName).show();
+				}else if($('#'+itemName).attr('cls') == 'tf') {
+					$('.prdDesc2').hide();
+					$('.'+itemName).show();
+				}
+			}
+		}
+		function checkIt() {
+			setTimeout(function() {
+				checkIt1("almond");
+				checkIt1("cashew");
+				checkIt1("brazilnuts");
+				checkIt1("hazelnuts");
+				checkIt1("macadamianuts");
+				checkIt1("walnuts");
+				checkIt1("apricots");
+				checkIt1("dates");
+				checkIt1("figs");
+				checkIt1("prunes");
+				checkIt1("cherries");
+				checkIt();
+			}, 10);
+		}
+		$('.df img').click(function () {
+			var tag = $(this).attr('tag');
+			$('.prdDesc1').hide();
+			$('.'+tag).show();
+		});
+		$('.tf img').click(function () {
+			var tag = $(this).attr('tag');
+			$('.prdDesc2').hide();
+			$('.'+tag).show();
+		});
+		function moveNow(linkToWeb, callerIs) {
+			if(linkToWeb == "home") {
+				$('#loadCont').text("LOADING...");
+				$('.t7').css('display', 'block');  
+				$('.loader').addClass('animated fadeIn');
+				$('.loader').css('display', 'block');
+				$('.rest').css('display', 'none');
+				$('#arr').css('background', 'transparent');
+				$('#arr p').css('color', '#f3f3f3');
+				setTimeout(function(){
+					$('.' + callerIs).toggle();
+					$('.' + linkToWeb).toggle();
+					$('.loader').addClass('animated fadeOut');
+					$('.loader').css('display', 'none');
+					$('.t7').css('display', 'none'); 
+					$('.rest').css('display', 'block');
+					$('#arr p').css('color', 'transparent');
+					setTimeout(function(){
+	        			$('.t1').addClass('fadeInDown animated');
+			        	$('.t1').css('display', 'block'); 
+						setTimeout(function(){
+		        			$('.t2').addClass('fadeInRightBig animated');
+			        		$('.t2').css('display', 'block'); 
+							setTimeout(function(){
+			        			$('.t3').addClass('fadeInLeftBig animated');
+			        			$('.t3').css('display', 'block'); 
+			        			setTimeout(function(){
+				        			$('.t4').addClass('fadeInUpBig animated');
+			        				$('.t4').css('display', 'block');
+				        			$('.t4a').addClass('fadeInUpBig animated');
+			        				$('.t4a').css('display', 'block');
+				        			setTimeout(function() {
+			    						$('.loader').removeClass('animated fadeOut');
+					        			$('.t1').removeClass('fadeInDown animated');
+					        			$('.t4a').removeClass('fadeInUpBig animated');
+					        			$('.t4').removeClass('fadeInUpBig animated');
+			        					$('.t2').removeClass('fadeInRightBig animated');
+				        				$('.t3').removeClass('fadeInLeftBig animated');
+				        			}, 1000);
+					            }, 300);
+						    }, 300);
+					    }, 300);
+				    }, 300);
+			    }, 2000);
+			}else if(linkToWeb == "story") {
+				$('#loadCont').text("We live, breathe and dream of nuts!!");
+				$('.t7').css('display', 'block'); 
+				$('.loader').addClass('animated fadeIn');
+				$('.loader').css('display', 'block');
+				$('.rest').css('display', 'none');
+				$('#arr').css('background', 'transparent');
+				$('#arr p').css('color', '#f3f3f3');
+				setTimeout(function(){
+					$('.' + callerIs).toggle();
+					$('.' + linkToWeb).toggle();
+					$('.loader').addClass('animated fadeOut');
+					$('.loader').css('display', 'none');
+					$('.t7').css('display', 'none'); 
+					$('.rest').css('display', 'block');
+					$('#arr p').css('color', 'transparent');
+					setTimeout(function(){
+	        			$('.st1').addClass('fadeInDown animated');
+	        			$('.st1a').addClass('fadeInDownBig animated');
+			        	$('.st1').css('display', 'block'); 
+			        	$('.st1a').css('display', 'block'); 
+						setTimeout(function(){
+		        			$('.st2').addClass('fadeIn animated');
+			        		$('.st2').css('display', 'block'); 
+							setTimeout(function(){
+			        			$('.st3').addClass('fadeIn animated');
+			        			$('.st3').css('display', 'block'); 
+			        			setTimeout(function() {
+		    						$('.loader').removeClass('animated fadeOut');
+				        			$('.st1').removeClass('fadeInDown animated');
+				        			$('.st1a').removeClass('fadeInDownBig animated');
+		        					$('.st2').removeClass('fadeIn animated');
+			        				$('.st3').removeClass('fadeIn animated');
+			        			}, 1000);
+						    }, 600);
+					    }, 300);
+				    }, 300);
+			    }, 2000);
+        	}else if(linkToWeb == "products") {
+				$('#loadCont').text("Discover the happiness of Axiom Nuts & kernels");
+				$('.t7').css('display', 'block'); 
+				$('.loader').addClass('animated fadeIn');
+				$('.loader').css('display', 'block');
+				$('.rest').css('display', 'none');
+				$('#arr').css('background', 'transparent');
+				$('#arr p').css('color', '#f3f3f3');
+				setTimeout(function(){
+					$('.' + callerIs).toggle();
+					$('.' + linkToWeb).toggle();
+					$('.loader').addClass('animated fadeOut');
+					$('.loader').css('display', 'none');
+					$('.t7').css('display', 'none'); 
+					$('.rest').css('display', 'block');
+					$('#arr p').css('color', 'transparent');
+	        		setTimeout(function(){
+	        			$('.p1').addClass('fadeInDown animated');
+	        			$('.p1a').addClass('fadeInDownBig animated');
+			        	$('.p1a').css('display', 'block'); 
+			        	$('.p1').css('display', 'block'); 
+						setTimeout(function(){
+		        			$('.p2').addClass('fadeInLeftBig animated');
+							$('.df').click();
+			        		$('.p2').css('display', 'block'); 
+							setTimeout(function(){
+			        			$('.p3').addClass('fadeInRightBig animated');
+			        			$('.p3').css('display', 'block'); 
+			        			$('.tf').click();
+								$('.almond').show();
+								$('.apricots').show();
+								checkIt();
+								setTimeout(function() {
+		    						$('.loader').removeClass('animated fadeOut');
+	        						$('.p1').removeClass('fadeInDown animated');
+	        						$('.p1a').removeClass('fadeInDownBig animated');
+	        						$('.p2').removeClass('fadeInLeftBig animated');
+			        				$('.p3').removeClass('fadeInRightBig animated');
+								}, 1000);
+						    }, 600);
+					    }, 300);
+				    }, 300);
+			    }, 2000);
+        	}else if(linkToWeb == "contact") {
+				$('.' + callerIs).toggle();
+				$('.' + linkToWeb).toggle();
+		        $('#arr').css('background', '#5a35239c');
+		        $('#arr p').css('color', '#f0f0f0');
+        		setTimeout(function(){
+	    			$('.c1').addClass('fadeInDown animated');
+	    			$('.c1a').addClass('fadeInDownBig animated');
+		        	$('.c1').css('display', 'block'); 
+		        	$('.c1a').css('display', 'block'); 
+					setTimeout(function(){
+	        			$('.c2').addClass('fadeInLeftBig animated');
+		        		$('.c2').css('display', 'block');
+						$('input').width($('textarea').width()); 
+						setTimeout(function(){
+		        			$('.c3').addClass('fadeInRightBig animated');
+		        			$('.c3').css('display', 'block');
+							setTimeout(function() {
+	    						$('.loader').removeClass('animated fadeOut');
+        						$('.c1').removeClass('fadeInDown animated');
+        						$('.c1a').removeClass('fadeInDownBig animated');
+        						$('.c2').removeClass('fadeInLeftBig animated');
+		        				$('.c3').removeClass('fadeInRightBig animated');
+							}, 1000);
+					    }, 600);
+				    }, 300);
+			    }, 100);
+        	}
+		}
+        function goth(linkToWeb, callerIs) {
+        	if(callerIs == "home") {
+				setTimeout(function(){
+	    			$('.t4').addClass('fadeOutDownBig animated');
+	    			$('.t4a').addClass('fadeOutDownBig animated');
+					setTimeout(function(){
+	        			$('.t3').addClass('fadeOutLeftBig animated');
+						setTimeout(function(){
+		        			$('.t2').addClass('fadeOutRightBig animated');
+		        			setTimeout(function(){
+			        			$('.t1').addClass('fadeOutUp animated');
+			        			moveNow(linkToWeb, callerIs);     			
+			        			setTimeout(function() {
+		    						$('.t4').removeClass('fadeOutDownBig animated');
+		        					$('.t3').removeClass('fadeOutLeftBig animated');
+			        				$('.t2').removeClass('fadeOutRightBig animated');
+				        			$('.t1').removeClass('fadeOutUp animated');
+	    							$('.t4').css('display', 'none');
+	    							$('.t4a').css('display', 'none');
+	    							$('.t3').css('display', 'none');
+	    							$('.t2').css('display', 'none');
+	    							$('.t1').css('display', 'none');
+			        			}, 3000);	 		
+				            }, 200);
+					    }, 200);
+				    }, 200);
+			    }, 100);
+        	}else if(callerIs == "story") {
+        		setTimeout(function(){
+	    			$('.st3').addClass('fadeOut animated');
+					setTimeout(function(){
+	        			$('.st2').addClass('fadeOut animated');
+	        			setTimeout(function(){
+		        			$('.st1').addClass('fadeOutUp animated');
+		        			$('.st1a').addClass('fadeOutUpBig animated');
+		        			moveNow(linkToWeb, callerIs);		
+		        			setTimeout(function() {
+								$('.st3').removeClass('fadeOut animated');
+		        				$('.st2').removeClass('fadeOut animated');
+			        			$('.st1').removeClass('fadeOutUp animated');
+			        			$('.st1a').removeClass('fadeOutUpBig animated');
+								$('.st3').css('display', 'none');
+		        				$('.st2').css('display', 'none');
+			        			$('.st1').css('display', 'none');
+			        			$('.st1a').css('display', 'none');
+		        			}, 3000);	    					
+			            }, 200);
+				    }, 200);
+			    }, 200);
+        	}else if(callerIs == "products") {
+        		setTimeout(function(){
+	    			$('.p3').addClass('fadeOutRightBig animated');
+					setTimeout(function(){
+	        			$('.p2').addClass('fadeOutLeftBig animated');
+	        			setTimeout(function(){
+		        			$('.p1').addClass('fadeOutUp animated');
+		        			$('.p1a').addClass('fadeOutUpBig animated');
+		        			moveNow(linkToWeb, callerIs);		
+		        			setTimeout(function() {
+		    					$('.p3').removeClass('fadeOutRightBig animated');
+		        				$('.p2').removeClass('fadeOutLeftBig animated');
+			        			$('.p1').removeClass('fadeOutUp animated');
+			        			$('.p1a').removeClass('fadeOutUpBig animated');
+		    					$('.p3').css('display', 'none');
+		        				$('.p2').css('display', 'none');
+			        			$('.p1').css('display', 'none');
+			        			$('.p1a').css('display', 'none');
+		        			}, 3000);	   
+			            }, 200);
+				    }, 200);
+			    }, 200);
+        	}else if(callerIs == "contact") {
+        		setTimeout(function(){
+	    			$('.c3').addClass('fadeOutRightBig animated');
+					setTimeout(function(){
+	        			$('.c2').addClass('fadeOutLeftBig animated');
+	        			setTimeout(function(){
+		        			$('.c1').addClass('fadeOutUp animated');
+		        			$('.c1a').addClass('fadeOutUpBig animated');
+		        			moveNow(linkToWeb, callerIs);		
+		        			setTimeout(function() {
+		    					$('.c3').removeClass('fadeOutRightBig animated');
+		        				$('.c2').removeClass('fadeOutLeftBig animated');
+			        			$('.c1').removeClass('fadeOutUp animated');
+			        			$('.c1a').removeClass('fadeOutUpBig animated');
+		    					$('.c3').css('display', 'none');
+		        				$('.c2').css('display', 'none');
+			        			$('.c1').css('display', 'none');
+			        			$('.c1a').css('display', 'none');
+		        			}, 3000);	   
+			            }, 200);
+				    }, 200);
+			    }, 200);
+        	}
+        }
 		$(document).ready(function(){
 			setTimeout(function(){
-		    	$('.loader').addClass('animated');
-		    	$('.loader').css('display', 'none');
+				$('.t7').css('display', 'none');  
+		    	$('.loader').addClass('fadeOut animated');
+		        $('#arr').css('background', 'transparent');
+		        $('#arr p').css('color', 'transparent');
 		        $('.rest').css('display', 'block');  
 				setTimeout(function(){
-        			$('.t1').addClass('animated');
-		        	$('.t1').css('display', 'block');  
+        			$('.t1').addClass('fadeInDown animated');
+		        	$('.t1').css('display', 'block'); 
 					setTimeout(function(){
-	        			$('.t2').addClass('animated');
-		        		$('.t2').css('display', 'block');  
+	        			$('.t2').addClass('fadeInRightBig animated');
+		        		$('.t2').css('display', 'block'); 
 						setTimeout(function(){
-		        			$('.t3').addClass('animated');
-		        			$('.t3').css('display', 'block');  
+		        			$('.t3').addClass('fadeInLeftBig animated');
+		        			$('.t3').css('display', 'block'); 
 		        			setTimeout(function(){
-			        			$('.t4').addClass('animated');
-		        				$('.t4').css('display', 'block');  
+			        			$('.t4').addClass('fadeInUpBig animated');
+		        				$('.t4').css('display', 'block');
+			        			$('.t4a').addClass('fadeInUpBig animated');
+		        				$('.t4a').css('display', 'block');
+		    					setTimeout(function() {
+		    						$('.loader').removeClass('animated fadeOut');
+	        						$('.t1').removeClass('fadeInDown animated');
+		        					$('.t2').removeClass('fadeInRightBig animated');
+			        				$('.t3').removeClass('fadeInLeftBig animated');
+				        			$('.t4').removeClass('fadeInUpBig animated');
+				        			$('.t4a').removeClass('fadeInUpBig animated');
+		    					}, 1000);
 				            }, 300);
 					    }, 300);
 				    }, 300);
 			    }, 100);
 		    }, 8000);
-		    $('.t5').addClass('animated');
-			$('.t5').css('display', 'block'); 
+			setTimeout(function() {
+			    $('.t5').addClass('animated fadeIn');
+				$('.t5').css('display', 'block'); 
+			}, 100);
             setTimeout(function(){
-		   		$('.t5').removeClass('fadeIn');
-		   		$('.t5').addClass('fadeOut');
-				$('.t5').css('display', 'none'); 
+		   		$('.t5').removeClass('fadeIn animated');
+		   		$('.t5').addClass('fadeOut animated');
             }, 4000); 
             setTimeout(function(){
+				$('.t5').css('display', 'none'); 
 				$('.t6').css('display', 'block'); 
-            }, 4100);
+            }, 4400);
             setTimeout(function(){
-			    $('.t7').addClass('animated');
+			    $('.t7').addClass('animated flipInX');
 				$('.t7').css('display', 'block');  
-            }, 4200);
+            }, 4700);
 		});
 	</script>
 </body>

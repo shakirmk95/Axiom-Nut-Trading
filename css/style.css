@@ -140,7 +140,7 @@ body {
 	background: #dd4b39;
 }
 
-@-webkit-keyframes swing {
+@-webkit-keyframes swinga {
     15% {
         -webkit-transform: translateX(5px);
         transform: translateX(5px);
@@ -160,7 +160,7 @@ body {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-}@keyframes swing {
+}@keyframes swinga {
     15% {
         -webkit-transform: translateX(5px);
         transform: translateX(5px);
@@ -181,9 +181,12 @@ body {
         transform: translateX(0);
     }
 }
-.swing:hover {
-    -webkit-animation: swing 1s ease;
-    animation: swing 1s ease;
+.swinga {
+	cursor: pointer;
+}
+.swinga:hover {
+    -webkit-animation: swinga 1s ease;
+    animation: swinga 1s ease;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
