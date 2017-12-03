@@ -10,8 +10,8 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
 
-$to = 'info@axiomnuttrading.com';
-// $to = 'srkm95@gmail.com';
+// $to = 'info@axiomnuttrading.com';
+$to = 'srkm95@gmail.com';
 $email_subject = "Message from Website Contact Form:  $name";
 $email_body = "$message";
 $mailheaders = "From: info@axiomnuttrading.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
