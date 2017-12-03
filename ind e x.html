@@ -327,7 +327,7 @@
 				<div class="col m12 l6 c2" style="margin: 0px;padding: 0px 30px;">
 					<div class="wrappingC">
 						<h5 style="color:#fff;margin: 20px 0px;padding: 0px;">CONTACT US</h5>
-			            <form name="sentMessage" id="contactForm" action="contact_me.php" method="post" novalidate>
+			            <form name="sentMessage" id="contactForm" method="post" novalidate>
 			                <div class="row control-group" style="margin: 0px;">
 			                    <div class="form-group col-xs-12 floating-label-form-group controls">
 			                        <label for="name">Name</label>
@@ -353,7 +353,7 @@
 			                <div id="success"></div>
 			                <div class="row">
 			                    <div class="s12" style="text-align: right;">
-			                        <button type="submit" class="btn btn-lg" style="background: #2b2b2b;padding: 0px 40px;" disabled="">Send</button>
+			                        <button type="submit" class="btn btn-lg" id="sub" style="background: #2b2b2b;padding: 0px 40px;" disabled="">Send</button>
 			                    </div>
 			                </div>
 			            </form>
@@ -410,6 +410,14 @@
 		});
 		$(document).ready(function(){
 			$('.carousel').carousel();
+		});
+		$('#sub').click(function() {
+			var subject = $('#name').val() + ' sends from ' + $('#email').val();
+			var body = $('#message').val();
+			window.open('mailto:info@axiomnuttrading.com?subject=' + subject + '&body=' + body);
+			$('#name').val("");
+			$('#email').val("");
+			$('#message').val("");
 		});
 		function checkIt1(itemName) {
 			if($('#'+itemName).css('opacity') == 1) {
